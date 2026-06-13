@@ -57,7 +57,7 @@ function ExamPage({ theme, onToggleTheme }: ExamPageProps) {
   useEffect(() => {
     if (!studentId || !assessmentId) return;
     
-    fetch(`http://localhost/thecircuit/load_attempt.php?student_id=${studentId}&assessment_id=${assessmentId}`)
+    fetch(`https://unilorin.page.gd/load_attempt.php?student_id=${studentId}&assessment_id=${assessmentId}`)
       .then(r => r.json())
       .then(data => {
          if (data && (data.status === 'Submitted' || data.status === 'Graded')) {
