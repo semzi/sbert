@@ -51,7 +51,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const fetchData = async () => {
-      const BASE_URL = 'https://unilorin.page.gd';
+      const BASE_URL = 'https://unilorin.alwaysdata.net/';
       // const BASE_URL = 'http://localhost/thecircuit';
       
       try {
